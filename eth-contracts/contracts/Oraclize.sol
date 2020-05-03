@@ -315,9 +315,9 @@ contract usingOraclize {
         _;
     }
 
-    function oraclize_setNetwork(uint8 _networkID) internal returns (bool _networkSet) {
+    function oraclize_setNetwork(uint8 /* _networkID */) internal returns (bool _networkSet) {
       return oraclize_setNetwork();
-      _networkID; // silence the warning and remain backwards compatible
+      // _networkID; // silence the warning and remain backwards compatible
     }
 
     function oraclize_setNetworkName(string memory _network_name) internal {
@@ -364,13 +364,13 @@ contract usingOraclize {
         return false;
     }
 
-    function __callback(bytes32 _myid, string memory _result) public {
+    function __callback(bytes32 _myid, string memory _result) public pure {
         __callback(_myid, _result, new bytes(0));
     }
 
-    function __callback(bytes32 _myid, string memory _result, bytes memory _proof) public {
+    function __callback(bytes32 /* _myid */, string memory /* _result */, bytes memory /* _proof */) public pure {
       return;
-      _myid; _result; _proof; // Silence compiler warnings
+      // _myid; _result; _proof; // Silence compiler warnings
     }
 
     function oraclize_getPrice(string memory _datasource) oraclizeAPI internal returns (uint _queryPrice) {
