@@ -1,0 +1,747 @@
+{
+  "contractName": "VerifierCaller",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_address",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/WorkSpace/Udacity/Blockchain/Capstone/eth-contracts/contracts/SolnSquareVerifier.sol\":\"VerifierCaller\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/WorkSpace/Udacity/Blockchain/Capstone/eth-contracts/contracts/ERC721Mintable.sol\":{\"keccak256\":\"0x1fb071d6baf221f2b31ff0f43ba4b998afc93e630d586cc85868d2a7910ddf8c\",\"urls\":[\"bzz-raw://26ddbb4c6451d1ad3e8d9f3b8844f61e7d67fe16eec774055b9fcdfd9fb58fd9\",\"dweb:/ipfs/QmS4WHWjhjfMbjABTZ5mVAoJSUB7R3TJjEwkuKES1KbJir\"]},\"/D/WorkSpace/Udacity/Blockchain/Capstone/eth-contracts/contracts/Oraclize.sol\":{\"keccak256\":\"0xfbf65241021a523a7ea16eb72d9b575a44bc7eb5c76d5cf002391f34debb16a2\",\"urls\":[\"bzz-raw://752d5772935b1e39e5f3924652b7a5927e0da6d8c122e271ea043b2c57162f5f\",\"dweb:/ipfs/QmfRZuYrekcc4ZwVPtDBk5wCdzXXshdxaJKNmab7Ws2DEW\"]},\"/D/WorkSpace/Udacity/Blockchain/Capstone/eth-contracts/contracts/SolnSquareVerifier.sol\":{\"keccak256\":\"0xe28de373e602485a8fbcfb2490d870fc03e6e651d06e777a44efbee4d55c153d\",\"urls\":[\"bzz-raw://35b60b3586e00b66d8286ba81db55d78ea52d310ffa17ec3c989fbd8364b017b\",\"dweb:/ipfs/QmPbfRrLyQ3Kp5a3NS78Q4bU3C7qHWTgJMiqjmtEvfp3SU\"]},\"/D/WorkSpace/Udacity/Blockchain/Capstone/eth-contracts/contracts/Verifier.sol\":{\"keccak256\":\"0x3aeb920b331d737c6aab3767baf2d1a3265656b9bf073a9df2bb51f52c5849f8\",\"urls\":[\"bzz-raw://97ebf0fde50a9abafc6b3ce8466c59352c5002d901d2d9c176b15873d1aa7904\",\"dweb:/ipfs/QmRQpVM14oWiLU9fFwDF7ThYf9AuVSu8ZwFeKz9neTeJPT\"]},\"openzeppelin-solidity/contracts/drafts/Counters.sol\":{\"keccak256\":\"0x982e18d2e3df98e3339f70f955a4d1fb78411a29963d0ea34621759eef67e86d\",\"urls\":[\"bzz-raw://b51463c381bc5ad8ad1c2a0b15bfbcab7810a35f0cd33e00a85c67d5526f97e8\",\"dweb:/ipfs/Qmb51F78kH7ifaW9CbkfZhprpkbY7T16gkarbscX6E7h2f\"]},\"openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xc2a200a877c4a9b2475c246c54ffecc69ffde3e11af83319c63c2dc5458bac80\",\"urls\":[\"bzz-raw://d6ee2095166a8fc1dbaff1949d786b91b8ef8ce41a7b5801a81dd2453220e770\",\"dweb:/ipfs/QmYBLFvCr9zKndkP8e7nFoKuZGcQEQtbHdwttC1MqckCgv\"]},\"openzeppelin-solidity/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0xeb8a266ef2da0aa60eea704031902ffd28b2d13dd0e8f5b69bcfb8415f2dad85\",\"urls\":[\"bzz-raw://3d69bbdaef9e7beb4919fed4f5aaca68cf3ecbf8f0932959fee720110daffaba\",\"dweb:/ipfs/QmdLwrPjDbhWBzkBMiRFbz3muLr5KQ5HQoiFk8EPkTMwRh\"]},\"openzeppelin-solidity/contracts/utils/Address.sol\":{\"keccak256\":\"0xea16b9933153c647242ba50b3e494fb133063d49f1fa81823f35a8c28754142e\",\"urls\":[\"bzz-raw://95b3b4b5c8008b6d8a862a797bf2550e8017cbff25d0e36be86cff48b1a9bbf2\",\"dweb:/ipfs/QmZWK9sD6V3jwSarEyheM8PjHFVcuA11W65FgAZ2fsu9sq\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b5060405160cc38038060cc83398181016040526020811015602f57600080fd5b8101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050603e80608e6000396000f3fe6080604052600080fdfea265627a7a72315820b0993cbc54249041d5009642f730a000035bebf49c512cf0d73b4470645f954d64736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a72315820b0993cbc54249041d5009642f730a000035bebf49c512cf0d73b4470645f954d64736f6c63430005100032",
+  "sourceMap": "198:151:3:-;;;262:84;8:9:-1;5:2;;;30:1;27;20:12;5:2;262:84:3;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;262:84:3;;;;;;;;;;;;;;;;330:8;309:9;;:30;;;;;;;;;;;;;;;;;;262:84;198:151;;;;;;",
+  "deployedSourceMap": "198:151:3:-;;;;;",
+  "source": "pragma solidity >=0.4.21 <0.6.0;\n\nimport \"./ERC721Mintable.sol\";\nimport \"./Verifier.sol\";\n\n// TODO define a contract call to the zokrates generated solidity contract <Verifier> or <renamedVerifier>\ncontract VerifierCaller {\n\n    Verifier private _verifier;\n\n    constructor(address _address) public {\n        _verifier = Verifier(_address);\n    }\n\n}\n\n// TODO define another contract named SolnSquareVerifier that inherits from your ERC721Mintable class\ncontract SolnSquareVerifier is ERC721Mintable {\n\n// TODO define a solutions struct that can hold an index & an address\n    struct Solution {\n        uint256 index;\n        address addr;\n    }\n\n// TODO define an array of the above struct\n\n\n// TODO define a mapping to store unique solutions submitted\n\n\n\n// TODO Create an event to emit when a solution is added\n\n\n\n// TODO Create a function to add the solutions to the array and emit the event\n\n\n\n// TODO Create a function to mint new NFT only after the solution has been verified\n//  - make sure the solution is unique (has not been used before)\n//  - make sure you handle metadata as well as tokenSuplly\n\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+  "sourcePath": "D:\\WorkSpace\\Udacity\\Blockchain\\Capstone\\eth-contracts\\contracts\\SolnSquareVerifier.sol",
+  "ast": {
+    "absolutePath": "/D/WorkSpace/Udacity/Blockchain/Capstone/eth-contracts/contracts/SolnSquareVerifier.sol",
+    "exportedSymbols": {
+      "SolnSquareVerifier": [
+        7460
+      ],
+      "VerifierCaller": [
+        7452
+      ]
+    },
+    "id": 7461,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7435,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:3"
+      },
+      {
+        "absolutePath": "/D/WorkSpace/Udacity/Blockchain/Capstone/eth-contracts/contracts/ERC721Mintable.sol",
+        "file": "./ERC721Mintable.sol",
+        "id": 7436,
+        "nodeType": "ImportDirective",
+        "scope": 7461,
+        "sourceUnit": 1117,
+        "src": "34:30:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/D/WorkSpace/Udacity/Blockchain/Capstone/eth-contracts/contracts/Verifier.sol",
+        "file": "./Verifier.sol",
+        "id": 7437,
+        "nodeType": "ImportDirective",
+        "scope": 7461,
+        "sourceUnit": 10020,
+        "src": "65:24:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 7452,
+        "linearizedBaseContracts": [
+          7452
+        ],
+        "name": "VerifierCaller",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 7439,
+            "name": "_verifier",
+            "nodeType": "VariableDeclaration",
+            "scope": 7452,
+            "src": "229:26:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Verifier_$10019",
+              "typeString": "contract Verifier"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 7438,
+              "name": "Verifier",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 10019,
+              "src": "229:8:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Verifier_$10019",
+                "typeString": "contract Verifier"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 7450,
+              "nodeType": "Block",
+              "src": "299:47:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 7448,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 7444,
+                      "name": "_verifier",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 7439,
+                      "src": "309:9:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Verifier_$10019",
+                        "typeString": "contract Verifier"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 7446,
+                          "name": "_address",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 7441,
+                          "src": "330:8:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 7445,
+                        "name": "Verifier",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10019,
+                        "src": "321:8:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_Verifier_$10019_$",
+                          "typeString": "type(contract Verifier)"
+                        }
+                      },
+                      "id": 7447,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "321:18:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Verifier_$10019",
+                        "typeString": "contract Verifier"
+                      }
+                    },
+                    "src": "309:30:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Verifier_$10019",
+                      "typeString": "contract Verifier"
+                    }
+                  },
+                  "id": 7449,
+                  "nodeType": "ExpressionStatement",
+                  "src": "309:30:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 7451,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7442,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7441,
+                  "name": "_address",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7451,
+                  "src": "274:16:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7440,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "274:7:3",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "273:18:3"
+            },
+            "returnParameters": {
+              "id": 7443,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "299:0:3"
+            },
+            "scope": 7452,
+            "src": "262:84:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 7461,
+        "src": "198:151:3"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 7453,
+              "name": "ERC721Mintable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1116,
+              "src": "484:14:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ERC721Mintable_$1116",
+                "typeString": "contract ERC721Mintable"
+              }
+            },
+            "id": 7454,
+            "nodeType": "InheritanceSpecifier",
+            "src": "484:14:3"
+          }
+        ],
+        "contractDependencies": [
+          72,
+          165,
+          658,
+          954,
+          1073,
+          1116,
+          7433
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 7460,
+        "linearizedBaseContracts": [
+          7460,
+          1116,
+          1073,
+          7433,
+          954,
+          658,
+          165,
+          72
+        ],
+        "name": "SolnSquareVerifier",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "SolnSquareVerifier.Solution",
+            "id": 7459,
+            "members": [
+              {
+                "constant": false,
+                "id": 7456,
+                "name": "index",
+                "nodeType": "VariableDeclaration",
+                "scope": 7459,
+                "src": "602:13:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 7455,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "602:7:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7458,
+                "name": "addr",
+                "nodeType": "VariableDeclaration",
+                "scope": 7459,
+                "src": "625:12:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 7457,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "625:7:3",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Solution",
+            "nodeType": "StructDefinition",
+            "scope": 7460,
+            "src": "576:68:3",
+            "visibility": "public"
+          }
+        ],
+        "scope": 7461,
+        "src": "453:656:3"
+      }
+    ],
+    "src": "0:1136:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/WorkSpace/Udacity/Blockchain/Capstone/eth-contracts/contracts/SolnSquareVerifier.sol",
+    "exportedSymbols": {
+      "SolnSquareVerifier": [
+        7460
+      ],
+      "VerifierCaller": [
+        7452
+      ]
+    },
+    "id": 7461,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7435,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:3"
+      },
+      {
+        "absolutePath": "/D/WorkSpace/Udacity/Blockchain/Capstone/eth-contracts/contracts/ERC721Mintable.sol",
+        "file": "./ERC721Mintable.sol",
+        "id": 7436,
+        "nodeType": "ImportDirective",
+        "scope": 7461,
+        "sourceUnit": 1117,
+        "src": "34:30:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/D/WorkSpace/Udacity/Blockchain/Capstone/eth-contracts/contracts/Verifier.sol",
+        "file": "./Verifier.sol",
+        "id": 7437,
+        "nodeType": "ImportDirective",
+        "scope": 7461,
+        "sourceUnit": 10020,
+        "src": "65:24:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 7452,
+        "linearizedBaseContracts": [
+          7452
+        ],
+        "name": "VerifierCaller",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 7439,
+            "name": "_verifier",
+            "nodeType": "VariableDeclaration",
+            "scope": 7452,
+            "src": "229:26:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Verifier_$10019",
+              "typeString": "contract Verifier"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 7438,
+              "name": "Verifier",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 10019,
+              "src": "229:8:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Verifier_$10019",
+                "typeString": "contract Verifier"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 7450,
+              "nodeType": "Block",
+              "src": "299:47:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 7448,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 7444,
+                      "name": "_verifier",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 7439,
+                      "src": "309:9:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Verifier_$10019",
+                        "typeString": "contract Verifier"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 7446,
+                          "name": "_address",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 7441,
+                          "src": "330:8:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 7445,
+                        "name": "Verifier",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10019,
+                        "src": "321:8:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_Verifier_$10019_$",
+                          "typeString": "type(contract Verifier)"
+                        }
+                      },
+                      "id": 7447,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "321:18:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Verifier_$10019",
+                        "typeString": "contract Verifier"
+                      }
+                    },
+                    "src": "309:30:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Verifier_$10019",
+                      "typeString": "contract Verifier"
+                    }
+                  },
+                  "id": 7449,
+                  "nodeType": "ExpressionStatement",
+                  "src": "309:30:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 7451,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7442,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7441,
+                  "name": "_address",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7451,
+                  "src": "274:16:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7440,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "274:7:3",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "273:18:3"
+            },
+            "returnParameters": {
+              "id": 7443,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "299:0:3"
+            },
+            "scope": 7452,
+            "src": "262:84:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 7461,
+        "src": "198:151:3"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 7453,
+              "name": "ERC721Mintable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1116,
+              "src": "484:14:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ERC721Mintable_$1116",
+                "typeString": "contract ERC721Mintable"
+              }
+            },
+            "id": 7454,
+            "nodeType": "InheritanceSpecifier",
+            "src": "484:14:3"
+          }
+        ],
+        "contractDependencies": [
+          72,
+          165,
+          658,
+          954,
+          1073,
+          1116,
+          7433
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 7460,
+        "linearizedBaseContracts": [
+          7460,
+          1116,
+          1073,
+          7433,
+          954,
+          658,
+          165,
+          72
+        ],
+        "name": "SolnSquareVerifier",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "SolnSquareVerifier.Solution",
+            "id": 7459,
+            "members": [
+              {
+                "constant": false,
+                "id": 7456,
+                "name": "index",
+                "nodeType": "VariableDeclaration",
+                "scope": 7459,
+                "src": "602:13:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 7455,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "602:7:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7458,
+                "name": "addr",
+                "nodeType": "VariableDeclaration",
+                "scope": 7459,
+                "src": "625:12:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 7457,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "625:7:3",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Solution",
+            "nodeType": "StructDefinition",
+            "scope": 7460,
+            "src": "576:68:3",
+            "visibility": "public"
+          }
+        ],
+        "scope": 7461,
+        "src": "453:656:3"
+      }
+    ],
+    "src": "0:1136:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2020-05-03T00:53:39.814Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

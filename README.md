@@ -2,22 +2,41 @@
 
 The capstone built upon the knowledge in the course in order to build a decentralized housing product. 
 
+# How to test
+
+* install required packages: run 'npm install' in source root folder
+* compile contracts: run 'truffle compile' in eth-contracts folder
+* run test: run 'truffle test' in eth-contracts folder
+
 # Deployed Network
+
 Rinkeby
 
 # Contract Address - Rinkeby
 
-* SolnSquareVerifier - 0xA3732055F880FE2bC995fc7FFAf9e7F45577695A
-* Verifier - 0x8AcC69f58d2EcC50F8db71399a8E2efa3e29ABB2
+* SolnSquareVerifier - 0x4bF2fcbC5D507d72fA7AeaA7c1C5153Ce2fB298A
+* Verifier - 0xEb7b0216DB6fc98BC85c6F85dAa1842362e7122a
+
+# Opensea storefront link
+
+https://rinkeby.opensea.io/category/ElliotZhangERC721
+
+
+# Opensea tokens
+
+Visit https://rinkeby.opensea.io/assets/unidentified-contract-v319
+
 
 # Opensea token purchase transactions
-* https://rinkeby.etherscan.io/tx/0x2ddf55cb73b4cf407ea729558011b64359df5acb576f736731a3cc0a394d47ff
-* https://rinkeby.etherscan.io/tx/0xd86a5ea2fb74598a6e68d436f3d4e1a5ab92403837794e8342fc7c719d5b7522
-* https://rinkeby.etherscan.io/tx/0x568590946fa3a3a8fa3a2ca5e458f4fc71dd7b20812fdd24e87813ae7ae649fd
-* https://rinkeby.etherscan.io/tx/0xa8a4295e3e1ae60ce4f18720d6ce3f097a434e8c376232a89bca3a49c296e4d7
-* https://rinkeby.etherscan.io/tx/0x0f3c0dcc26f97db244d3223faba42f2320fc19601667bfe99df5f9b23600c9a3
+
+https://rinkeby.etherscan.io/tx/0x78eaa783e3e9ecf31ba17063f0ab05b5564701192f47ab656c3b752d7e190493
+https://rinkeby.etherscan.io/tx/0x4156de9116a7b647bb1286324a0de0bf889d47649b25ea20023c596e3b8c2ca7
+https://rinkeby.etherscan.io/tx/0x8bcb527ead5f50598c948c0aed50a81bd023efa1fa47c41c4907e0ad0f0d6338
+https://rinkeby.etherscan.io/tx/0x545c9b4a585863d8e306fa6176291f2f0b16b26ba1a34c0a113380bd13b8995e
+https://rinkeby.etherscan.io/tx/0x3e72b1292a88e8285a449d689c30217a4134e5331eb5e666b5401b875061f131
 
 # More Info
+* The contracts ABI can be found in eth-contracts/build
 * Zokrates file also tracked under zokrates folder
 
 # Project Resources

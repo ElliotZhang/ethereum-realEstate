@@ -1,5 +1,4 @@
-var SolnSquareVerifier = artifacts.require('SolnSquareVerifier');
-var Verifier = artifacts.require('Verifier');
+var ERC721Mintable = artifacts.require('ERC721Mintable');
 
 contract('TestERC721Mintable', accounts => {
 
@@ -8,8 +7,7 @@ contract('TestERC721Mintable', accounts => {
 
     describe('match erc721 spec', function () {
         beforeEach(async function () {
-            let verifier = await Verifier.new();
-            this.contract = await SolnSquareVerifier.new("TestName", "TestSymbol", verifier.address, {from: account_one});
+            this.contract = await ERC721Mintable.new("TestName", "TestSymbol", {from: account_one});
 
             // TODO: mint multiple tokens
             await this.contract.mint(account_two, 1, "111", { from: account_one })
@@ -42,8 +40,7 @@ contract('TestERC721Mintable', accounts => {
 
     describe('have ownership properties', function () {
         beforeEach(async function () { 
-            let verifier = await Verifier.new();
-            this.contract = await SolnSquareVerifier.new("TestName", "TestSymbol", verifier.address, {from: account_one});
+            this.contract = await ERC721Mintable.new("TestName", "TestSymbol", {from: account_one});
 
         })
 
